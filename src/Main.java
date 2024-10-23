@@ -1,15 +1,24 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import br.dio.desafio.Curso;
+import br.dio.desafio.Mentoria;
+
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Curso curso1 = new Curso();
+        curso1.setTitulo("curso java");
+        curso1.setDescricao("descricao curso java");
+        curso1.setCargaHoraria(8);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("mentoria java");
+        mentoria.setDescricao("descricao mentoria java");
+        mentoria.setData(LocalDate.now());
+
+
+        System.out.println(curso1);
+        System.out.println(mentoria);
+
     }
 }
+
